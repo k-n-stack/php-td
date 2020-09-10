@@ -1,0 +1,4 @@
+in ObjectPooler.php, make a method enemyInRange who scan the scope of eache tower and compare with the enemy coord. use the zoneCalculation and print_TowerZone in Tower.php as a blue print.
+in ObjectPooler.php, make a method attack that allow tower to deal damage to enemies.
+in ObjectPooler.php, make a method who allow to sell tower for gold.
+...start to work on the input pannel.

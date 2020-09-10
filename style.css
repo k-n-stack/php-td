@@ -1,0 +1,277 @@
+.mapbutton {
+    opacity: 0;
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    padding: 0%;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.mapbutton:hover {
+    opacity: 0.40;
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    padding: 0%;
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+.case {
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+}
+
+/* .layoutchar {
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+}
+
+.layoutzone {
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-width: 1px;
+    box-sizing: border-box;
+} */
+
+.towerzone {
+    background-color: rgba(255, 94, 0, 0.25);
+    background-image: repeating-linear-gradient(45deg, transparent, transparent 5px, rgba(255,255,255,.15) 5px, rgba(255,255,255,.15) 10px);
+}
+
+.selection {
+    width: 70px;
+    height: 70px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(210, 255, 8, 0.3);
+    box-sizing: border-box;
+}
+
+.map {
+    width: 630px;
+    height: 630px;
+    position: absolute;
+    /* top: 700px; */
+    top: 100px;
+    left: 10px;
+    border-style: solid;
+    border-width: 1px;
+
+    display: grid;
+
+    grid-template-areas: 
+    "m1x1 m1x2 m1x3 m1x4 m1x5 m1x6 m1x7 m1x8 m1x9"
+    "m2x1 m2x2 m2x3 m2x4 m2x5 m2x6 m2x7 m2x8 m2x9"
+    "m3x1 m3x2 m3x3 m3x4 m3x5 m3x6 m3x7 m3x8 m3x9"
+    "m4x1 m4x2 m4x3 m4x4 m4x5 m4x6 m4x7 m4x8 m4x9"
+    "m5x1 m5x2 m5x3 m5x4 m5x5 m5x6 m5x7 m5x8 m5x9"
+    "m6x1 m6x2 m6x3 m6x4 m6x5 m6x6 m6x7 m6x8 m6x9"
+    "m7x1 m7x2 m7x3 m7x4 m7x5 m7x6 m7x7 m7x8 m7x9"
+    "m8x1 m8x2 m8x3 m8x4 m8x5 m8x6 m8x7 m8x8 m8x9"
+    "m9x1 m9x2 m9x3 m9x4 m9x5 m9x6 m9x7 m9x8 m9x9"
+    ;
+}
+
+.layout {
+    width: 630px;
+    height: 630px;
+    position: absolute;
+    /* top: 700px; */
+    top: 100px;
+    left: 10px;
+    border-style: solid;
+    border-width: 1px;
+
+    display: grid;
+
+    grid-template-areas: 
+    "l1x1 l1x2 l1x3 l1x4 l1x5 l1x6 l1x7 l1x8 l1x9"
+    "l2x1 l2x2 l2x3 l2x4 l2x5 l2x6 l2x7 l2x8 l2x9"
+    "l3x1 l3x2 l3x3 l3x4 l3x5 l3x6 l3x7 l3x8 l3x9"
+    "l4x1 l4x2 l4x3 l4x4 l4x5 l4x6 l4x7 l4x8 l4x9"
+    "l5x1 l5x2 l5x3 l5x4 l5x5 l5x6 l5x7 l5x8 l5x9"
+    "l6x1 l6x2 l6x3 l6x4 l6x5 l6x6 l6x7 l6x8 l6x9"
+    "l7x1 l7x2 l7x3 l7x4 l7x5 l7x6 l7x7 l7x8 l7x9"
+    "l8x1 l8x2 l8x3 l8x4 l8x5 l8x6 l8x7 l8x8 l8x9"
+    "l9x1 l9x2 l9x3 l9x4 l9x5 l9x6 l9x7 l9x8 l9x9"
+    ;
+}
+
+.zone {
+    width: 630px;
+    height: 630px;
+    position: absolute;
+    /* top: 700px; */
+    top: 100px;
+    left: 10px;
+    border-style: solid;
+    border-width: 1px;
+
+    display: grid;
+
+    grid-template-areas: 
+    "z1x1 z1x2 z1x3 z1x4 z1x5 z1x6 z1x7 z1x8 z1x9"
+    "z2x1 z2x2 z2x3 z2x4 z2x5 z2x6 z2x7 z2x8 z2x9"
+    "z3x1 z3x2 z3x3 z3x4 z3x5 z3x6 z3x7 z3x8 z3x9"
+    "z4x1 z4x2 z4x3 z4x4 z4x5 z4x6 z4x7 z4x8 z4x9"
+    "z5x1 z5x2 z5x3 z5x4 z5x5 z5x6 z5x7 z5x8 z5x9"
+    "z6x1 z6x2 z6x3 z6x4 z6x5 z6x6 z6x7 z6x8 z6x9"
+    "z7x1 z7x2 z7x3 z7x4 z7x5 z7x6 z7x7 z7x8 z7x9"
+    "z8x1 z8x2 z8x3 z8x4 z8x5 z8x6 z8x7 z8x8 z8x9"
+    "z9x1 z9x2 z9x3 z9x4 z9x5 z9x6 z9x7 z9x8 z9x9"
+    ;
+}
+
+.range {
+    width: 630px;
+    height: 630px;
+    position: absolute;
+    /* top: 700px; */
+    top: 100px;
+    left: 10px;
+    border-style: solid;
+    border-width: 1px;
+
+    display: grid;
+
+    grid-template-areas: 
+    "r1x1 r1x2 r1x3 r1x4 r1x5 r1x6 r1x7 r1x8 r1x9"
+    "r2x1 r2x2 r2x3 r2x4 r2x5 r2x6 r2x7 r2x8 r2x9"
+    "r3x1 r3x2 r3x3 r3x4 r3x5 r3x6 r3x7 r3x8 r3x9"
+    "r4x1 r4x2 r4x3 r4x4 r4x5 r4x6 r4x7 r4x8 r4x9"
+    "r5x1 r5x2 r5x3 r5x4 r5x5 r5x6 r5x7 r5x8 r5x9"
+    "r6x1 r6x2 r6x3 r6x4 r6x5 r6x6 r6x7 r6x8 r6x9"
+    "r7x1 r7x2 r7x3 r7x4 r7x5 r7x6 r7x7 r7x8 r7x9"
+    "r8x1 r8x2 r8x3 r8x4 r8x5 r8x6 r8x7 r8x8 r8x9"
+    "r9x1 r9x2 r9x3 r9x4 r9x5 r9x6 r9x7 r9x8 r9x9"
+    ;
+}
+
+.actioninput {
+    padding: 0;
+    margin: 0;
+    left: 0px;
+}
+
+#inputpanel {
+    width: 610px;
+    height: 628px;
+    border-style: solid;
+    border-width: 2px;
+    position: absolute;
+    left: 660px;
+    /* top: 700px; */
+    top: 100px;
+
+    display: grid;
+    grid-template-areas:
+    'st ac'
+    'st ac' ;
+    grid-template-columns: 400px max-content;
+}
+
+#stat {
+    margin: 0;
+    padding: 0;
+    /* width: 400px; */
+    background-color: black;
+
+    grid-area: st;
+
+}
+
+#action {
+    margin: 0;
+    padding: 0;
+    grid-area: ac;
+    /* width: 100%; */
+    /* margin-left: 10%; */
+}
+
+/* #action input {
+    width: 100%;
+} */
+
+.home 
+{
+    background-color: rgb(146,63,231);
+}
+
+.wate
+{
+    background-color: darkcyan;
+}
+
+.gras
+{
+    background-color: green;
+}
+
+.path
+{
+    background-color: chocolate;
+}
+
+.enemy
+{
+    padding: 5px;
+    background-color: red;
+    text-align: center;
+}
+
+.tower
+{
+    padding: 5px;
+    background-color: rgb(34,177,76);
+    text-align: center;
+}
+
+.homelayout
+{ 
+    padding: 5px;
+    text-align: center;
+}
+
+#goimg
+{
+    position: absolute; 
+    left: 0; 
+    right: 0;
+    bottom: 100px;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 500px;
+}
+
+#gomsg
+{   
+    position: absolute; 
+    left: 0; 
+    right: 0;
+    bottom: 0;
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 1000px;
+
+    font-family: Consolas, monospace;
+    font-size: 40px;
+    color: red;
+    text-align: center;
+}
+
+#go
+{
+    background-color: black;
+}
